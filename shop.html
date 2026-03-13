@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Shop | TK Leather Shields</title>
@@ -9,18 +10,36 @@
 <style>
 
 body{
-font-family:Arial;
+font-family:Arial, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
 text-align:center;
 }
 
+/* Header */
+
+header{
+background:black;
+padding:20px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Page Section */
+
 section{
 padding:60px 20px;
 max-width:1200px;
 margin:auto;
 }
+
+/* Grid Layout */
 
 .grid{
 display:grid;
@@ -29,10 +48,17 @@ gap:30px;
 margin-top:40px;
 }
 
+/* Cards */
+
 .card{
 background:#1f2937;
 padding:20px;
 border-radius:10px;
+transition:transform .2s;
+}
+
+.card:hover{
+transform:scale(1.03);
 }
 
 .card img{
@@ -45,11 +71,28 @@ color:white;
 text-decoration:none;
 }
 
+footer{
+background:black;
+padding:30px;
+margin-top:60px;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<header>
+
+<h2>TK Leather Shields</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+</nav>
+
+</header>
 
 <section>
 
@@ -91,6 +134,12 @@ text-decoration:none;
 </div>
 
 </section>
+
+<footer>
+
+<p>© 2026 TK Leather Shields</p>
+
+</footer>
 
 </body>
 </html>
