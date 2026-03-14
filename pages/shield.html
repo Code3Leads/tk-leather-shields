@@ -38,7 +38,7 @@ nav a:hover{
 color:#d1d5db;
 }
 
-/* Page Section */
+/* Page */
 
 section{
 padding:60px 20px;
@@ -51,7 +51,7 @@ font-size:36px;
 margin-bottom:10px;
 }
 
-/* Grid Layout */
+/* Product Grid */
 
 .grid{
 display:grid;
@@ -63,14 +63,14 @@ margin-left:auto;
 margin-right:auto;
 }
 
-/* Product Cards */
+/* Product Card */
 
 .card{
 background:#1f2937;
 padding:22px;
 border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,.35);
-transition:transform .25s ease, box-shadow .25s ease;
+transition:.25s;
 }
 
 .card:hover{
@@ -85,7 +85,7 @@ width:220px;
 display:block;
 margin:10px auto 15px auto;
 border-radius:8px;
-transition:transform .25s ease;
+transition:.25s;
 }
 
 .main-image:hover{
@@ -97,22 +97,22 @@ transform:scale(1.05);
 .gallery{
 display:flex;
 justify-content:center;
-gap:10px;
-margin-bottom:15px;
+gap:6px;
+margin-bottom:12px;
 }
 
 .gallery img{
 width:60px;
 border-radius:6px;
 cursor:pointer;
-transition:transform .2s ease;
+transition:.2s;
 }
 
 .gallery img:hover{
 transform:scale(1.1);
 }
 
-/* Product Title */
+/* Product Name */
 
 h3{
 margin-top:8px;
@@ -127,23 +127,41 @@ font-size:18px;
 margin:5px 0 10px 0;
 }
 
-/* Button */
+/* Buttons */
 
 .button{
 display:inline-block;
-background:#7f1d1d;
+background:#8b1c1c;
 color:white;
 padding:10px 20px;
 margin-top:10px;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
-transition:background .2s ease, transform .15s ease;
+transition:.2s;
 }
 
 .button:hover{
-background:#991b1b;
+background:#b91c1c;
 transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+padding:30px;
+background:black;
+}
+
+/* Mobile */
+
+@media (max-width:700px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
 }
 
 </style>
@@ -176,6 +194,7 @@ transform:scale(1.05);
 <img src="../images/shield/pgfg_standard_shield_main.png" class="main-image">
 
 <div class="gallery">
+<img src="../images/shield/pgfg_standard_shield_main.png">
 <img src="../images/shield/pgfd_shield_angle1.png">
 </div>
 
@@ -195,6 +214,7 @@ transform:scale(1.05);
 <img src="../images/shield/boston_style_shield.png" class="main-image">
 
 <div class="gallery">
+<img src="../images/shield/boston_style_shield.png">
 <img src="../images/shield/boston_style_angle1.png">
 </div>
 
@@ -214,6 +234,7 @@ transform:scale(1.05);
 <img src="../images/shield/standard_shield_angle1.png" class="main-image">
 
 <div class="gallery">
+<img src="../images/shield/standard_shield_angle1.png">
 <img src="../images/shield/standard_shield_angle2.png">
 <img src="../images/shield/standard_shield_angle3.png">
 </div>
@@ -227,13 +248,14 @@ transform:scale(1.05);
 </div>
 
 
-<!-- NY Shield -->
+<!-- NY Style Shield -->
 
 <div class="card">
 
 <img src="../images/shield/ny_style_shield.png" class="main-image">
 
 <div class="gallery">
+<img src="../images/shield/ny_style_shield.png">
 <img src="../images/shield/ny_style_shield_angle1.png">
 </div>
 
@@ -248,6 +270,32 @@ transform:scale(1.05);
 </div>
 
 </section>
+
+<footer>
+
+<p>© 2026 TK Leather Shields</p>
+
+</footer>
+
+
+<!-- Thumbnail click image swap -->
+
+<script>
+
+document.querySelectorAll(".gallery img").forEach(img => {
+
+img.addEventListener("click", function(){
+
+const card = this.closest(".card");
+const main = card.querySelector(".main-image");
+
+main.src = this.src;
+
+});
+
+});
+
+</script>
 
 </body>
 
