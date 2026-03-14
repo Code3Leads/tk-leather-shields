@@ -1,3 +1,8 @@
+/* =========================
+   TK LEATHER SHIELDS
+   MASTER STYLESHEET
+========================= */
+
 body{
 font-family:Arial, sans-serif;
 margin:0;
@@ -5,6 +10,11 @@ background:#0f172a;
 color:white;
 text-align:center;
 }
+
+
+/* =========================
+   HEADER / NAV
+========================= */
 
 header{
 background:black;
@@ -19,6 +29,26 @@ text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover{
+color:#d1d5db;
+}
+
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+
+section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -29,6 +59,11 @@ margin-left:auto;
 margin-right:auto;
 }
 
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
 .card{
 background:#1f2937;
 padding:22px;
@@ -37,12 +72,32 @@ box-shadow:0 10px 25px rgba(0,0,0,.35);
 transition:.25s;
 }
 
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 16px 35px rgba(0,0,0,.45);
+}
+
+
+/* =========================
+   PRODUCT IMAGES
+========================= */
+
 .main-image{
 width:220px;
 display:block;
 margin:10px auto 15px auto;
 border-radius:8px;
+transition:.25s;
 }
+
+.main-image:hover{
+transform:scale(1.05);
+}
+
+
+/* =========================
+   THUMBNAIL GALLERY
+========================= */
 
 .gallery{
 display:flex;
@@ -55,7 +110,33 @@ margin-bottom:12px;
 width:60px;
 border-radius:6px;
 cursor:pointer;
+transition:.2s;
 }
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+
+/* =========================
+   PRODUCT TEXT
+========================= */
+
+h3{
+margin-top:8px;
+margin-bottom:6px;
+font-size:20px;
+}
+
+p{
+font-size:18px;
+margin:5px 0 10px 0;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 .button{
 display:inline-block;
@@ -66,10 +147,34 @@ margin-top:10px;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
+transition:.2s;
 }
+
+.button:hover{
+background:#b91c1c;
+transform:scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
 margin-top:60px;
 padding:30px;
 background:black;
+}
+
+
+/* =========================
+   MOBILE / RESPONSIVE
+========================= */
+
+@media (max-width:700px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
 }
