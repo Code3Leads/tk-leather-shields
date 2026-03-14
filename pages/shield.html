@@ -9,6 +9,8 @@
 
 <style>
 
+/* Base */
+
 body{
 font-family:Arial, sans-serif;
 margin:0;
@@ -22,6 +24,7 @@ text-align:center;
 header{
 background:black;
 padding:20px;
+box-shadow:0 2px 8px rgba(0,0,0,.5);
 }
 
 nav a{
@@ -29,6 +32,10 @@ color:white;
 margin:0 15px;
 text-decoration:none;
 font-weight:bold;
+}
+
+nav a:hover{
+color:#d1d5db;
 }
 
 /* Page Section */
@@ -39,33 +46,88 @@ max-width:1200px;
 margin:auto;
 }
 
-/* Grid */
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+/* Grid Layout */
 
 .grid{
 display:grid;
-grid-template-columns:columns: 2fr 2fr;
-gap:30px;
+grid-template-columns:1fr 1fr;
+gap:35px;
 margin-top:40px;
 max-width:900px;
 margin-left:auto;
 margin-right:auto;
 }
 
-/* Cards */
+/* Product Cards */
 
 .card{
 background:#1f2937;
-padding:12px;
-border-radius:10px;
+padding:22px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.card img{
-width:300px;
-max-width:300px;
-border-radius:8px;
-display:block;
-margin:auto;
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 16px 35px rgba(0,0,0,.45);
 }
+
+/* Main Product Image */
+
+.main-image{
+width:220px;
+display:block;
+margin:10px auto 15px auto;
+border-radius:8px;
+transition:transform .25s ease;
+}
+
+.main-image:hover{
+transform:scale(1.05);
+}
+
+/* Thumbnail Gallery */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:15px;
+}
+
+.gallery img{
+width:60px;
+border-radius:6px;
+cursor:pointer;
+transition:transform .2s ease;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* Product Title */
+
+h3{
+margin-top:8px;
+margin-bottom:6px;
+font-size:20px;
+}
+
+/* Price */
+
+p{
+font-size:18px;
+margin:5px 0 10px 0;
+}
+
+/* Button */
 
 .button{
 display:inline-block;
@@ -76,35 +138,15 @@ margin-top:10px;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
-transition:0.2s;
+transition:background .2s ease, transform .15s ease;
 }
 
 .button:hover{
 background:#991b1b;
-}
-
-.main-image{
-width:350px;
-display:block;
-margin:20px auto;
-border-radius:8px;
-}
-
-.gallery{
-display:flex;
-justify-content:center;
-gap:10px;
-margin-bottom:20px;
-}
-
-.gallery img{
-width:80px;
-border-radius:6px;
-cursor:pointer;
+transform:scale(1.05);
 }
 
 </style>
-  
 
 </head>
 
@@ -127,31 +169,33 @@ cursor:pointer;
 
 <div class="grid">
 
+<!-- PGFD Shield -->
+
 <div class="card">
 
-<img src="../images/shield/pgfg_standard_shield_main.png">
-  
-<div class="gallery">
-  
-  <img src="../images/shield/pgfd_shield_angle1.png">
-  
-</div>
+<img src="../images/shield/pgfg_standard_shield_main.png" class="main-image">
 
+<div class="gallery">
+<img src="../images/shield/pgfd_shield_angle1.png">
+</div>
 
 <h3>PGFD Standard Shield</h3>
 
 <p>$70</p>
+
 <a href="pgfd_order.html" class="button">Customize / Order</a>
+
 </div>
+
+
+<!-- Boston Shield -->
 
 <div class="card">
 
 <img src="../images/shield/boston_style_shield.png" class="main-image">
 
 <div class="gallery">
-  
-  <img src="../images/shield/boston_style_angle1.png">
-  
+<img src="../images/shield/boston_style_angle1.png">
 </div>
 
 <h3>Boston Style Shield</h3>
@@ -162,13 +206,16 @@ cursor:pointer;
 
 </div>
 
+
+<!-- Standard Shield -->
+
 <div class="card">
 
 <img src="../images/shield/standard_shield_angle1.png" class="main-image">
 
 <div class="gallery">
-  <img src="../images/shield/standard_shield_angle2.png">
-  <img src="../images/shield/standard_shield_angle3.png">
+<img src="../images/shield/standard_shield_angle2.png">
+<img src="../images/shield/standard_shield_angle3.png">
 </div>
 
 <h3>Standard Style Shield</h3>
@@ -177,12 +224,17 @@ cursor:pointer;
 
 <a href="custom_shield_order.html" class="button">Customize / Order</a>
 
+</div>
+
+
+<!-- NY Shield -->
+
 <div class="card">
 
 <img src="../images/shield/ny_style_shield.png" class="main-image">
 
 <div class="gallery">
-  <img src="../images/shield/ny_style_shield_angle1.png">
+<img src="../images/shield/ny_style_shield_angle1.png">
 </div>
 
 <h3>NY Style Shield</h3>
@@ -193,9 +245,6 @@ cursor:pointer;
 
 </div>
 
-
-
-</div>
 </div>
 
 </section>
