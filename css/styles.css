@@ -55,6 +55,54 @@ max-width:1200px;
 margin:auto;
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+background-image: url("../images/hero.jpg");
+
+background-size: cover;
+background-position: center;
+
+padding:140px 20px;
+
+position:relative;
+
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+
+background:rgba(10,20,40,.75);
+}
+
+.hero h1,
+.hero p,
+.hero .button{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+
 
 /* =========================
    PRODUCT GRID
