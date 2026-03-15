@@ -1,122 +1,169 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>TK Leather Shields</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-
-body{
-font-family:Arial, sans-serif;
-margin:0;
-background:#0f172a;
-color:white;
-text-align:center;
-}
-
-header{
-background:black;
-padding:20px;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-size: 18px;
-}
-
-section{
-padding:80px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-.button{
-display:inline-block;
-background:#f97316;
-padding:15px 30px;
-margin-top:20px;
-color:white;
-text-decoration:none;
-}
-  
-nav a:hover{
-color:#f97316;
-}
-  
-.logo{
-  max-width:150px;
-  height:auto;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:40px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-footer{
-background:black;
-padding:30px;
-margin-top:50px;
-}
-
-</style>
+<link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
 <header>
-<img src="images/logo/TKLS_logo.jpg" alt="TK Leather Shields Logo" class="logo">
+
+<img src="images/logo/TKLS_logo.jpg" class="logo">
 
 <nav>
 <a href="index.html">Home</a>
 <a href="shop.html">Shop</a>
-<a href="#">Contact</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 </header>
 
+
+<!-- HERO -->
+
 <section>
 
-<h2>Handcrafted Leather Firefighter Gear</h2>
+<h1>Handcrafted Leather Firefighter Gear</h1>
 
 <p>
-Custom helmet shields, radio straps, and leather accessories made for firefighters.
+Custom helmet shields, radio straps, and leather accessories 
+built by firefighters for firefighters.
 </p>
 
-<a href="shop.html" class="button" style="display:inline-block;">Shop Now</a>
+<a href="shop.html" class="button">Browse The Shop</a>
 
 </section>
 
+
+<!-- SHOP CATEGORIES -->
+
 <section>
 
-<h2>Recent Builds</h2>
+<h1>Shop</h1>
 
-<div class="gallery">
+<div class="grid">
 
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
+<div class="card">
+<a href="pages/shield.html">
+<img src="images/shield/pgfg_standard_shield_main.png" class="main-image">
+<h3>Helmet Shields</h3>
+</a>
+</div>
+
+<div class="card">
+<a href="pages/straps.html">
+<img src="images/straps/basic_radio-strap.png" class="main-image">
+<h3>Radio Straps</h3>
+</a>
+</div>
+
+<div class="card">
+<a href="pages/pouches.html">
+<img src="images/pouches/basic_universal_radio_pouch.png" class="main-image">
+<h3>Radio Pouches</h3>
+</a>
+</div>
+
+<div class="card">
+<a href="pages/accessories.html">
+<img src="images/accessories/glove_strap.png" class="main-image">
+<h3>Accessories</h3>
+</a>
+</div>
+
+<div class="card">
+<a href="pages/station_pride.html">
+<img src="images/station_pride/custom_coffee_mugs.png" class="main-image">
+<h3>Station Pride</h3>
+</a>
+</div>
 
 </div>
 
 </section>
 
+
+<!-- RECENT BUILDS -->
+
+<section>
+
+<h1>Recent Builds</h1>
+
+<div class="grid">
+
+<img src="images/recent_builds/recent_build.jpg" class="main-image">
+<img src="images/recent_builds/recent_build1.jpg" class="main-image">
+<img src="images/recent_builds/recent_build2.jpg" class="main-image">
+<img src="images/recent_builds/recent_build3.jpg" class="main-image">
+<img src="images/recent_builds/recent_build4.jpg" class="main-image">
+<img src="images/recent_builds/recent_build5.jpg" class="main-image">
+<img src="images/recent_builds/recent_build6.jpg" class="main-image">
+<img src="images/recent_builds/recent_build7.jpg" class="main-image">
+
+</div>
+
+</section>
+
+
+<!-- ABOUT TKLS -->
+
+<section>
+
+<h1>About TK Leather Shields</h1>
+
+<img src="images/TKLS_owners.png" class="owners-photo">
+
+<p>
+
+TK Leather Shields and Designs was established in 2009 by Tony, a firefighter, and Karin McGillin, a paramedic. Starting in our garage as a modest hobby has evolved into a booming business.
+
+</p>
+
+<p>
+
+Over the past 16 years, we have created and shipped products across the US and look forward to continued growth!
+
+</p>
+
+<p>
+
+We are dedicated to providing exceptional craftsmanship and innovative designs at affordable prices. We welcome new ideas and challenges and are excited to work with you on your custom design.
+
+</p>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section>
+
+<h1>Ready To Build Your Custom Gear?</h1>
+
+<a href="shop.html" class="button">Start Your Order</a>
+
+</section>
+
+
 <footer>
 
-<p>© 2026 TK Leather Shields</p>
+<p>© 2009 TK Leather Shields</p>
+
+<p>Firefighter Owned & Operated</p>
+
+<p class="credit">
+Website by <a href="https://code3leads.github.io" target="_blank">Code 3 Leads</a>
+</p>
 
 </footer>
 
 </body>
+
 </html>
