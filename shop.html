@@ -144,11 +144,17 @@ margin-top:60px;
 
 </section>
 
-<footer>
+<div id="footer"></div>
 
-<p>© 2026 TK Leather Shields</p>
+<script>
 
-</footer>
+fetch("/components/footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+
+</script>
 
 </body>
 </html>
