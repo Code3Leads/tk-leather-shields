@@ -141,23 +141,21 @@ box-shadow:0 16px 35px rgba(0,0,0,.45);
    PRODUCT IMAGES
 ========================= */
 
-.main-image{
-width:220px;
+/* =========================
+   PRODUCT IMAGES
+========================= */
+
+.card img{
+max-width:220px;
+width:100%;
+height:auto;
 display:block;
-margin:10px auto 15px auto;
+margin:0 auto 15px auto;
 border-radius:8px;
 transition:.25s;
 }
 
-.card img{
-width:100%;
-max-width:220px;
-height:auto;
-display:block;
-margin:auto;
-}
-
-.main-image:hover{
+.card img:hover{
 transform:scale(1.05);
 }
 
