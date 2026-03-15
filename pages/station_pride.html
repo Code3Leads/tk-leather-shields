@@ -63,16 +63,17 @@
 
 </section>
 
-<footer>
+<div id="footer"></div>
 
-<p>© 2009 TK Leather Shields</p>
-<p>Firefighter Owned & Operated</p>
+<script>
 
-<p class="credit">
-Website by <a href="https://code3leads.github.io" target="_blank">Code 3 Leads</a>
-</p>
+fetch("/components/footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
 
-</footer>
+</script>
 
 </body>
 
