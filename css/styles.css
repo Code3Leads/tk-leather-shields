@@ -149,6 +149,14 @@ border-radius:8px;
 transition:.25s;
 }
 
+.card img{
+width:100%;
+max-width:220px;
+height:auto;
+display:block;
+margin:auto;
+}
+
 .main-image:hover{
 transform:scale(1.05);
 }
@@ -232,6 +240,7 @@ background:black;
 .credit{
 margin-top:10px;
 font-size:14px;
+opacity:.85;
 }
 
 .footer-logo{
