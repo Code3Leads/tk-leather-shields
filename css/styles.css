@@ -166,6 +166,38 @@ padding:30px;
 background:black;
 }
 
+/* =========================
+   FOOTER CREDIT
+========================= */
+
+.credit{
+font-size:14px;
+opacity:0.8;
+margin-top:10px;
+}
+
+.credit a{
+color:#d1d5db;
+text-decoration:none;
+}
+
+.credit a:hover{
+text-decoration:underline;
+}
+
+
+/* =========================
+   MOBILE / RESPONSIVE
+========================= */
+
+@media (max-width:700px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
 
 /* =========================
    MOBILE / RESPONSIVE
