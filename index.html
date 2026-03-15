@@ -154,24 +154,25 @@ We are dedicated to providing exceptional craftsmanship and innovative designs a
 </section>
 
 
-<footer>
+<div id="footer"></div>
 
-<p>© 2009 TK Leather Shields</p>
+<script>
+const root = "";
 
-<p>Firefighter Owned & Operated</p>
+fetch("components/footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML =
+data.replaceAll("${root}", root);
+});
+</script>
 
-<p class="credit">
+</body>
+</html>
+</body>
 
-<img src="images/code3-logo.png" class="footer-logo">
+</html>
 
-Website by 
-<a href="https://code3leads.github.io" target="_blank">Code 3 Leads</a>
-
-<img src="images/code3-logo.png" class="footer-logo">
-
-</p>
-
-</footer>
 
 </body>
 
