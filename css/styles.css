@@ -172,32 +172,22 @@ background:black;
 
 .credit{
 font-size:14px;
-opacity:0.8;
+opacity:0.9;
 margin-top:10px;
 }
 
-.credit a{
-color:#d1d5db;
-text-decoration:none;
+.footer-logo{
+height:18px;
+vertical-align:middle;
+margin-left:6px;
+opacity:0.9;
+transition:0.2s;
 }
 
-.credit a:hover{
-text-decoration:underline;
+.footer-logo:hover{
+ opacity:1;
+ transform:scale(1.1);
 }
-
-
-/* =========================
-   MOBILE / RESPONSIVE
-========================= */
-
-@media (max-width:700px){
-
-.grid{
-grid-template-columns:1fr;
-}
-
-}
-
 
 /* =========================
    MOBILE / RESPONSIVE
