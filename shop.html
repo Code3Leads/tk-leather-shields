@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 
 
 </head>
@@ -78,18 +78,12 @@
 <div id="footer"></div>
 
 <script>
-const root = "";
-
-fetch("components/footer.html")
+fetch("../components/footer.html")
 .then(res => res.text())
 .then(data => {
-document.getElementById("footer").innerHTML =
-data.replaceAll("${root}", root);
+document.getElementById("footer").innerHTML = data;
 });
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
