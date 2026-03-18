@@ -148,6 +148,16 @@ border-radius:8px;
 transition:.25s;
 }
 
+/* Fix for tall strap card */
+.strap-problem .img-container {
+height:200px;
+}
+
+.strap-problem img {
+max-height:90%;
+object-fit:contain;
+}
+
 /* =========================
    IMAGE CONTAINER
 ========================= */
