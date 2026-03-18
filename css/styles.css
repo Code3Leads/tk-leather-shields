@@ -155,6 +155,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 height:220px;
+
+box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
 }
 
 .img-container img {
@@ -190,15 +192,16 @@ transform:scale(1.1);
    PRODUCT TEXT
 ========================= */
 
-h3{
-margin-top:8px;
-margin-bottom:6px;
+.card h3 {
+margin-top:10px;
+margin-bottom:5px;
 font-size:20px;
 }
 
-p{
+.card p {
+margin:0;
+margin-bottom:10px;
 font-size:18px;
-margin:5px 0 10px 0;
 }
 
 
@@ -211,7 +214,7 @@ display:inline-block;
 background:#8b1c1c;
 color:white;
 padding:10px 20px;
-margin-top:10px;
+margin-top:auto;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
