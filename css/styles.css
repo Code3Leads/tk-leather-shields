@@ -169,25 +169,6 @@ object-fit:contain;
 }
 
 /* =========================
-   PRODUCT IMAGES
-========================= */
-
-.card img{
-max-width:220px;
-width:100%;
-height:auto;
-display:block;
-margin:0 auto 15px auto;
-border-radius:8px;
-transition:.25s;
-}
-
-.card img:hover{
-transform:scale(1.05);
-}
-
-
-/* =========================
    THUMBNAIL GALLERY
 ========================= */
 
