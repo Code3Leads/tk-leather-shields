@@ -24,17 +24,14 @@
 
 </header>
 
-<section class="hero">
+<section>
+
 <h1>Accessories</h1>
 <p>Custom leather accessories built for durability and everyday use.</p>
-</section>
 
-<section>
-  
 <div class="grid">
 
 <!-- Custom Beanies -->
-
 <div class="card">
 
 <img src="../images/accessories/custom_beanies.png" class="main-image">
@@ -54,7 +51,6 @@
 
 
 <!-- Custom Hats -->
-
 <div class="card">
 
 <img src="../images/accessories/custom_hats.png" class="main-image">
@@ -73,7 +69,6 @@
 
 
 <!-- Custom Name Plates -->
-
 <div class="card">
 
 <img src="../images/accessories/custom_name_plates.png" class="main-image">
@@ -88,7 +83,6 @@
 
 
 <!-- Leather Glove Strap -->
-
 <div class="card">
 
 <img src="../images/accessories/glove_strap.png" class="main-image">
@@ -103,7 +97,6 @@
 
 
 <!-- SCBA Mask Covers -->
-
 <div class="card">
 
 <img src="../images/accessories/scba_mask_covers.png" class="main-image">
@@ -123,19 +116,12 @@
 <div id="footer"></div>
 
 <script>
-const root = "";
-
-fetch("components/footer.html")
+fetch("../components/footer.html")
 .then(res => res.text())
 .then(data => {
-document.getElementById("footer").innerHTML =
-data.replaceAll("${root}", root);
+document.getElementById("footer").innerHTML = data;
 });
 </script>
 
 </body>
-</html>
-
-</body>
-
 </html>
