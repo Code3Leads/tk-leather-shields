@@ -277,6 +277,19 @@ outline:none;
 box-shadow:0 0 0 2px #b91c1c;
 }
 
+.next-steps {
+text-align:left;
+max-width:400px;
+margin:15px auto;
+line-height:1.6;
+}
+
+form.card {
+margin-bottom:30px;
+}
+
+
+
 /* =========================
    FOOTER
 ========================= */
