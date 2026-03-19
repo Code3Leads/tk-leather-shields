@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Order | TK Leather Shields</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+<h2>TK Leather Shields</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+</nav>
+</header>
+
+<section>
+
+<h1>Customize Your Order</h1>
+<p>Fill out the form below and we’ll contact you to finalize your custom piece.</p>
+
+<form action="https://formspree.io/f/YOUR_ID" method="POST" class="card">
+
+<input type="text" name="name" placeholder="Your Name" required><br><br>
+
+<input type="email" name="email" placeholder="Email Address" required><br><br>
+
+<input type="text" name="phone" placeholder="Phone Number"><br><br>
+
+<select name="product">
+<option>Helmet Shield</option>
+<option>Radio Strap</option>
+<option>Radio Pouch</option>
+<option>Accessories</option>
+</select><br><br>
+
+<textarea name="details" placeholder="Customization details (text, colors, etc)" rows="5"></textarea><br><br>
+
+<button type="submit" class="button">Submit Order</button>
+
+</form>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("components/footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>
