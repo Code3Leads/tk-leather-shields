@@ -96,13 +96,15 @@ text-align: center;
 .hero{
 
 background-image: url("../images/work_bench.png");
-
 background-size: cover;
 background-position: center;
 
 padding:140px 20px;
 
 position:relative;
+border-radius:12px;
+overflow:hidden;
+margin-bottom:40px;
 
 }
 
@@ -115,6 +117,7 @@ right:0;
 bottom:0;
 
 background:rgba(10,20,40,.75);
+backdrop-filter: blur(2px);
 }
 
 .hero h1,
@@ -125,8 +128,9 @@ z-index:2;
 }
 
 .hero h1{
-font-size:42px;
+font-size:44px;
 margin-bottom:10px;
+letter-spacing:.5px;
 }
 
 .hero p{
@@ -134,8 +138,8 @@ max-width:600px;
 margin:auto;
 margin-bottom:25px;
 line-height:1.6;
+opacity:.9;
 }
-
 
 
 /* =========================
