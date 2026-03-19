@@ -71,11 +71,21 @@
 <div id="footer"></div>
 
 <script>
-fetch("components/footer.html")
+fetch("../components/footer.html")
 .then(res => res.text())
 .then(data => {
 document.getElementById("footer").innerHTML = data;
 });
+</script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const product = params.get("product");
+
+if(product){
+  const dropdown = document.querySelector("select[name='product']");
+  dropdown.value = product;
+}
 </script>
 
 </body>
