@@ -3,6 +3,10 @@
    MASTER STYLESHEET
 ========================= */
 
+/* =========================
+   GLOBAL / BODY
+========================= */
+
 body{
 font-family:Arial, sans-serif;
 margin:0;
@@ -10,7 +14,6 @@ background:linear-gradient(180deg, #0f172a, #020617);
 color:white;
 text-align:center;
 }
-
 
 /* =========================
    HEADER / NAV
@@ -29,6 +32,7 @@ flex-wrap:wrap;
 header h2{
 margin:0;
 font-size:20px;
+letter-spacing:.5px;
 }
 
 nav{
@@ -48,45 +52,13 @@ color:#d1d5db;
 }
 
 /* =========================
-   LOGO
-========================= */
-
-.logo{
-height:70px;
-width:auto;
-display:block;
-margin:auto;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#d1d5db;
-}
-
-
-/* =========================
    PAGE LAYOUT
 ========================= */
 
 section{
 padding:60px 20px;
-max-width:1200px;
+max-width:1000px;
 margin:auto;
-}
-
-/* GLOBAL STYLES */
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-background: #0f172a;
-color: white;
-text-align: center;
 }
 
 /* =========================
@@ -94,18 +66,14 @@ text-align: center;
 ========================= */
 
 .hero{
-
 background-image: url("../images/work_bench.png");
 background-size: cover;
 background-position: center;
-
 padding:140px 20px;
-
 position:relative;
 border-radius:12px;
 overflow:hidden;
 margin-bottom:40px;
-
 }
 
 .hero::before{
@@ -115,7 +83,6 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-
 background:rgba(10,20,40,.75);
 backdrop-filter: blur(2px);
 }
@@ -141,6 +108,10 @@ line-height:1.6;
 opacity:.9;
 }
 
+/* =========================
+   HEADINGS
+========================= */
+
 h1{
 font-size:38px;
 margin-bottom:10px;
@@ -150,7 +121,6 @@ h2{
 margin-top:30px;
 margin-bottom:10px;
 }
-
 
 /* =========================
    PRODUCT GRID
@@ -165,7 +135,6 @@ max-width:900px;
 margin-left:auto;
 margin-right:auto;
 }
-
 
 /* =========================
    PRODUCT CARD
@@ -194,11 +163,21 @@ transition:.25s;
 transform:scale(1.05);
 }
 
+.card h3 {
+margin-top:10px;
+margin-bottom:5px;
+font-size:20px;
+}
+
 .card p {
+margin:0;
+margin-bottom:10px;
+font-size:18px;
 opacity:0.9;
 }
 
 /* Fix for tall strap card */
+
 .strap-problem .img-container {
 height:200px;
 }
@@ -221,7 +200,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 height:220px;
-
 box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
 }
 
@@ -253,24 +231,6 @@ transition:.2s;
 transform:scale(1.1);
 }
 
-
-/* =========================
-   PRODUCT TEXT
-========================= */
-
-.card h3 {
-margin-top:10px;
-margin-bottom:5px;
-font-size:20px;
-}
-
-.card p {
-margin:0;
-margin-bottom:10px;
-font-size:18px;
-}
-
-
 /* =========================
    BUTTONS
 ========================= */
@@ -295,12 +255,12 @@ box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
 /* =========================
-   ORDER FORM POLISH
+   ORDER FORM
 ========================= */
 
 form.card {
 max-width:500px;
-margin:40px auto;
+margin:40px auto 30px auto;
 padding:30px;
 background:#1f2937;
 border-radius:12px;
@@ -336,12 +296,6 @@ margin:15px auto;
 line-height:1.6;
 }
 
-form.card {
-margin-bottom:30px;
-}
-
-
-
 /* =========================
    FOOTER
 ========================= */
@@ -370,12 +324,12 @@ margin:0 6px;
 }
 
 .footer-logo:hover{
- opacity:1;
- transform:scale(1.1);
+opacity:1;
+transform:scale(1.1);
 }
 
 /* =========================
-   MOBILE / RESPONSIVE
+   MOBILE
 ========================= */
 
 @media (max-width:700px){
