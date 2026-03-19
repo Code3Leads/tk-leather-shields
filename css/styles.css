@@ -19,29 +19,30 @@ text-align:center;
    HEADER / NAV
 ========================= */
 
+/* =========================
+   HEADER / NAV (CENTERED)
+========================= */
+
 header{
 background:black;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+padding:20px;
+text-align:center;
 box-shadow:0 2px 8px rgba(0,0,0,.5);
-flex-wrap:wrap;
 }
 
 header h2{
 margin:0;
-font-size:20px;
+font-size:22px;
 letter-spacing:.5px;
 }
 
 nav{
-margin-top:5px;
+margin-top:10px;
 }
 
 nav a{
 color:white;
-margin-left:20px;
+margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 font-size:14px;
