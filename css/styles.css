@@ -54,6 +54,18 @@ color:#d1d5db;
 }
 
 /* =========================
+   LOGO
+========================= */
+
+header .logo{
+height:60px;
+width:auto;
+display:block;
+margin-bottom:8px;
+object-fit:contain;
+}
+
+/* =========================
    PAGE LAYOUT
 ========================= */
 
