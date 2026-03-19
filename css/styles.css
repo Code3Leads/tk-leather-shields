@@ -57,13 +57,15 @@ color:#d1d5db;
    LOGO
 ========================= */
 
-header .logo{
+.logo{
 height:60px;
+max-width:200px;
 width:auto;
 display:block;
-margin-bottom:8px;
+margin:0 auto 8px auto;
 object-fit:contain;
 }
+
 
 /* =========================
    PAGE LAYOUT
