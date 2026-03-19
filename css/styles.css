@@ -132,6 +132,19 @@ margin-right:auto;
    PRODUCT CARD
 ========================= */
 
+.card {
+background:#1f2937;
+padding:20px;
+border-radius:12px;
+text-align:center;
+transition:0.25s;
+}
+
+.card:hover {
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
 .card img{
 width:100%;
 border-radius:8px;
@@ -142,10 +155,8 @@ transition:.25s;
 transform:scale(1.05);
 }
 
-.card img{
-width:100%;
-border-radius:8px;
-transition:.25s;
+.card p {
+opacity:0.9;
 }
 
 /* Fix for tall strap card */
