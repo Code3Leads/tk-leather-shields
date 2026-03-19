@@ -18,8 +18,33 @@ text-align:center;
 
 header{
 background:black;
-padding:20px;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 box-shadow:0 2px 8px rgba(0,0,0,.5);
+flex-wrap:wrap;
+}
+
+header h2{
+margin:0;
+font-size:20px;
+}
+
+nav{
+margin-top:5px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+}
+
+nav a:hover{
+color:#d1d5db;
 }
 
 /* =========================
