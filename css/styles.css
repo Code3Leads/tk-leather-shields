@@ -351,7 +351,7 @@ line-height:1.6;
 
 .design-preview {
   margin: 30px auto;
-  max-width: 600px;   /* controls size */
+  max-width: 400px;   /* controls size */
   text-align: center;
 }
 
