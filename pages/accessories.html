@@ -145,28 +145,7 @@ document.getElementById("footer").innerHTML = data;
 });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  document.querySelectorAll(".gallery").forEach(gallery => {
-
-    const mainImage = gallery.parentElement.querySelector(".main-image");
-
-    if (!mainImage) return;
-
-    gallery.querySelectorAll("img").forEach(img => {
-
-      img.style.cursor = "pointer"; // makes it feel clickable
-
-      img.addEventListener("click", () => {
-        mainImage.src = img.src;
-      });
-
-    });
-
-  });
-
-});
+<script src="../js/gallery.js">
 </script>
   
 </body>
