@@ -142,26 +142,12 @@ document.getElementById("footer").innerHTML = data;
 });
 </script>
 
-
-<!-- Thumbnail click image swap -->
-
-<script>
-
-document.querySelectorAll(".gallery img").forEach(img => {
-
-img.addEventListener("click", function(){
-
-const card = this.closest(".card");
-const main = card.querySelector(".main-image");
-
-main.src = this.src;
-
-});
-
-});
-
-</script>
-
+<script src="../js/gallery.js">
+</script> 
+  
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img">
+</div>
+  
 </body>
-
 </html>
