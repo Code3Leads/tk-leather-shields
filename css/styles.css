@@ -220,15 +220,14 @@ object-fit:contain;
 ========================= */
 
 .img-container {
-background:#020617;
-padding:12px;
-border-radius:10px;
-margin-bottom:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-height:220px;
-box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+background: #020617;
+padding: 8px;
+border-radius: 10px;
+margin-bottom: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 220px;
 }
 
 .img-container img {
@@ -248,11 +247,13 @@ gap:6px;
 margin-bottom:12px;
 }
 
-.gallery img{
-width:60px;
-border-radius:6px;
-cursor:pointer;
-transition:.2s;
+.gallery img {
+width: 60px;
+height: 60px;        /* 🔥 THIS FIXES EVERYTHING */
+object-fit: cover;   /* 🔥 prevents distortion */
+border-radius: 6px;
+cursor: pointer;
+transition: .2s;
 }
 
 .gallery img:hover{
