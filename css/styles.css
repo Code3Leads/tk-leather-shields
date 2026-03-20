@@ -174,11 +174,16 @@ padding:20px;
 border-radius:12px;
 text-align:center;
 transition:0.25s;
+cursor: pointer;
 }
 
 .card:hover {
 transform:translateY(-5px);
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card:hover h3 {
+  color: #dc2626; /* slightly darker red on hover */
 }
 
 .card img{
@@ -191,10 +196,17 @@ transition:.25s;
 transform:scale(1.05);
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit; /* 👈 THIS IS KEY */
+}
+
 .card h3 {
 margin-top:10px;
 margin-bottom:5px;
 font-size:20px;
+color: #ef4444; /* 🔥 firehouse red */
+transition: color 0.2s ease;
 }
 
 .card p {
