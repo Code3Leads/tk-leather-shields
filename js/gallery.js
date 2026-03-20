@@ -1,47 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
 
-  document.querySelectorAll(".gallery").forEach(gallery => {
+  console.log("JS FULLY LOADED");
 
-    const mainImage = gallery.parentElement.querySelector(".main-image");
-    if (!mainImage) return;
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
 
-    gallery.querySelectorAll("img").forEach(img => {
+  if (!lightbox || !lightboxImg) {
+    console.log("Lightbox not found");
+    return;
+  }
 
-      img.addEventListener("click", () => {
+  document.querySelectorAll(".main-image").forEach(img => {
 
-        const newImage = new Image();
-        newImage.src = img.src;
+    img.addEventListener("click", () => {
 
-        newImage.onload = () => {
-          mainImage.style.opacity = 0;
+      console.log("CLICK WORKED");
 
-          setTimeout(() => {
-            mainImage.src = newImage.src;
-            mainImage.style.opacity = 1;
-          }, 100);
-        };
-
-      });
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
 
     });
 
   });
 
-});
-
-// 🔥 LIGHTBOX FUNCTIONALITY
-
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-document.querySelectorAll(".main-image").forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
   });
-});
 
-// click anywhere to close
-lightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+};
