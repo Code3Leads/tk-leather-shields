@@ -349,6 +349,25 @@ margin:15px auto;
 line-height:1.6;
 }
 
+.design-preview {
+  margin: 30px auto;
+  max-width: 600px;   /* controls size */
+  text-align: center;
+}
+
+.design-preview img {
+  width: 100%;        /* 🔥 forces it to scale up */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.design-note {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
 /* =========================
    FOOTER
 ========================= */
