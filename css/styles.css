@@ -324,64 +324,79 @@ box-shadow:0 5px 15px rgba(0,0,0,0.4);
 ========================= */
 
 form.card {
-max-width:500px;
-margin:40px auto 30px auto;
-padding:30px;
-background:#1f2937;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  max-width: 500px;
+  margin: 40px auto 30px auto;
+  padding: 30px;
+  background: #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 form input,
 form select,
 form textarea {
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:6px;
-border:none;
-font-size:16px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
 }
 
 form textarea {
-resize:none;
+  resize: none;
 }
 
 form input:focus,
 form select:focus,
 form textarea:focus {
-outline:none;
-box-shadow:0 0 0 2px #b91c1c;
+  outline: none;
+  box-shadow: 0 0 0 2px #b91c1c;
 }
+
+/* =========================
+   ORDER INFO / NEXT STEPS
+========================= */
 
 .next-steps {
-text-align:left;
-max-width:400px;
-margin:15px auto;
-line-height:1.6;
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+  line-height: 1.6;
+  font-size: 15px;
+  opacity: 0.9;
 }
 
-.next-steps a {
+/* =========================
+   CONTACT INFO (EMAIL LINK)
+========================= */
+
+.contact-info a {
   color: #ef4444;
   text-decoration: none;
 }
 
-.next-steps a:hover {
+.contact-info a:hover {
   text-decoration: underline;
 }
 
+/* =========================
+   DESIGN PREVIEW IMAGE
+========================= */
+
 .design-preview {
-  margin: 30px auto;
-  max-width: 400px;   /* controls size */
+  margin: 20px auto;
+  max-width: 400px;
   text-align: center;
 }
 
 .design-preview img {
-  width: 100%;        /* 🔥 forces it to scale up */
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  image-rendering: auto;
 }
 
 .design-note {
