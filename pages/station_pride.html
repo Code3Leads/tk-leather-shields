@@ -82,6 +82,18 @@ fetch("../components/footer.html")
 document.getElementById("footer").innerHTML = data;
 });
 </script>
+  
+<script>
+document.querySelectorAll(".gallery").forEach(gallery => {
+  const mainImage = gallery.parentElement.querySelector(".main-image");
 
+  gallery.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => {
+      mainImage.src = img.src;
+    });
+  });
+});
+</script>
+  
 </body>
 </html>
